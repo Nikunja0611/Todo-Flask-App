@@ -70,5 +70,5 @@ This is a simple **TODO Application** built using the **Flask Framework** and **
 - View the task in the table below.
 - Use the Delete button in the action column to remove a task.
 
-```
+
 ![Todo-Flask-App](image.png)
