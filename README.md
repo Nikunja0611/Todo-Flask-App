@@ -36,16 +36,19 @@ This is a simple **TODO Application** built using the **Flask Framework** and **
     source ./env/Scripts/activate.bat
 
 3. **Set Up the Database:**:
-    ```mysql
+    
 - **Install following libraries**:
+    ```mysql
     pip install mysql-connector
     pip install mysql-connector-python
     pip install pymysql
 
 - **Edit App config**:
+    ```python
     app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://username:password@localhost/todo"
 
-- **Create a database and table in MySQL**:   
+- **Create a database and table in MySQL**:
+    ```mysql
     CREATE DATABASE IF NOT EXISTS todo;
     USE todo;
 
@@ -55,9 +58,11 @@ This is a simple **TODO Application** built using the **Flask Framework** and **
     description VARCHAR(200));
 
 4. **Run the Flask Application**:
+    ```terminal
     python app.py
 
 5. **Access the app**:
+    ```
     http://127.0.0.1:5000
 
 ## Usage
@@ -65,4 +70,5 @@ This is a simple **TODO Application** built using the **Flask Framework** and **
 - View the task in the table below.
 - Use the Delete button in the action column to remove a task.
 
+```
 ![Todo-Flask-App](image.png)
